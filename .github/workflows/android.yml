@@ -49,7 +49,7 @@ jobs:
 
       - name: Find APKs
         run: |
-          echo "APK_FILE_CANARY=$(find app/build/outputs/apk/canary -name '*.apk')" >> $GITHUB_ENV
+          echo "APK_FILE_CANARY=$(find app/build/outputs/apk/release -name '*.apk')" >> $GITHUB_ENV
 
       - name: Show APKs SHA256
         if: success()
